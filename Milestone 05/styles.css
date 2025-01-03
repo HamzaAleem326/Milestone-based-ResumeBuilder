@@ -1,0 +1,154 @@
+/* In the name of Allah, the Most Gracious, the Most Merciful */
+
+/* CSS Default resets */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+  caret-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input {
+  caret-color: #007bff;
+}
+
+::selection {
+  color: #007bff;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(65, 65, 65) !important;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+/* Main Container Of Resume Builder */
+.resume-container {
+  width: 794px;
+  height: 1123px;
+  box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.234);
+  display: flex;
+}
+
+#container-resume {
+  display: none;
+}
+
+h2 {
+  color: #007bff;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+h1 {
+  color: black;
+}
+
+h1 span {
+  color: black;
+}
+
+li {
+  list-style: inside;
+}
+
+/* SOCIAL LINKS */
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #007bff;
+}
+
+.links a {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.topPeragraph {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #007bff;
+  font-weight: 00;
+}
+
+.links a i {
+  color: black;
+  margin-bottom: 20px;
+  margin: 5px 15px;
+}
+
+.links a i:hover {
+  color: rgb(36, 155, 252);
+}
+
+.topPeragraph b {
+  font-size: 16px;
+  color: #007bff;
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+.error {
+  border: 1px solid red !important;
+}
+
+.greenClass {
+  border: 1px solid green !important;
+}
+
+@media (max-width: 768px) {
+  .resume-container {
+    height: fit-content;
+  }
+
+  .topPeragraph {
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 500;
+  }
+
+  .topPeragraph b {
+    font-size: 12px;
+    color: #007bff;
+    margin-left: 5px;
+    font-weight: 700;
+  }
+
+  .checkbox-lang label {
+    font-size: 1.2rem !important;
+    margin: 0px;
+  }
+
+  input[type="checkbox"] {
+    width: 20px !important;
+    height: 20px !important;
+    font-size: .6rem;
+  }
+}
+
